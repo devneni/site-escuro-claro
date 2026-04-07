@@ -1,0 +1,59 @@
+/* ===== Variáveis globais ===== */
+:root {
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* ===== Estrutura base ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--fontColor);
+    margin: 0;
+    padding: 40px;
+}
+
+/* ===== Header ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===== Lista ===== */
+ul {
+    list-style-type: square;
+}
+
+/* ===== Botão ===== */
+.btn {
+    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--btnBg);
+    color: var(--btnFontColor);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* ===== Tema Claro ===== */
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+/* ===== Tema Escuro ===== */
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
