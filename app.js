@@ -15,3 +15,24 @@ switcher.addEventListener('click', function () {
 
     console.log("current class name: " + className);
 });
+
+
+const addTaskBtn = document.getElementById('addTask');
+const newTaskInput = document.getElementById('newTask');
+const taskList = document.getElementById('taskList');
+
+addTaskBtn.addEventListener('click', function() {
+    const taskText = newTaskInput.value.trim();
+    if (taskText) {
+        const li = document.createElement('li');
+        li.textContent = taskText;
+        taskList.appendChild(li);
+        newTaskInput.value = '';
+    }
+});
+
+newTaskInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        addTaskBtn.click();
+    }
+});

@@ -8,19 +8,29 @@
 </head>
 
 <body class="light-theme">
+    <main class="page">
+        <header class="header">
+            <div>
+                <h1>Lista de tarefas</h1>
+            </div>
+            <button class="btn theme-toggle">Escuro</button>
+        </header>
 
-    <div class="header">
-        <h1>Lista de Tarefas</h1>
-        <button class="btn">Escuro</button>
-    </div>
+        <section class="task-panel">
+            <p class="task-title">Tarefas atuais:</p>
 
-    <p id="msg">Coisas para fazer:</p>
+            <div class="task-input-group">
+                <input id="newTask" type="text" placeholder="Digite uma nova tarefa" aria-label="Nova tarefa">
+                <button id="addTask" class="btn add-btn">Adicionar</button>
+            </div>
 
-    <ul>
-        <li class="list">Estudar JavaScript</li>
-        <li class="list">Treinar HTML e CSS</li>
-        <li class="list">Criar projetos</li>
-    </ul>
+            <ul id="taskList" class="task-list">
+                <li>Adicionar estilos visuais</li>
+                <li>Adicionar temas claros e escuros</li>
+                <li>Habilitar a alternância do tema</li>
+            </ul>
+        </section>
+    </main>
 
     <script src="app.js"></script>
     <noscript>Você precisa habilitar o JavaScript para ver o site completo.</noscript>
